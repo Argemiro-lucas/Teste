@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Tech Soluções</title>
+    
+    <link rel="stylesheet" href="../css/segunda.css">
+</head>
+<body class="kb-body-dark pagina2-bg-imagem">
+
+   
+    <img src="css.png" alt="Figura Canto Superior" class="figura-superior">
+
+   
+    <img src="html&css.webp" alt="Figura Lado Direito" class="figura-direita">
+
+    <header class="main-header">
+        <div class="logo">TECH<span>SOLUÇÕES</span></div>
+    </header>
+
+    
+    <main class="kb-container-center" style="flex-direction: column; gap: 30px;">
+        
+       
+        <div class="kb-contact-card" style="max-width: 600px;">
+            <div class="kb-header-card">
+                <h2>Guia Visual: Imagem de Fundo (Background)</h2>
+                <p>Para definir uma imagem como plano de fundo de um site, utilizamos as propriedades de <code>background</code> no CSS aplicadas diretamente na tag <code>body</code>.</p>
+            </div>
+
+            
+            <div style="background: #2d3748; padding: 15px; border-radius: 6px; margin-bottom: 15px;">
+                <pre style="margin: 0; color: #a0aec0; font-family: 'Courier New', monospace; font-size: 13px; text-align: left; line-height: 1.4;">
+<span style="color: #ed64a6;">body {</span>
+  <span style="color: #ecc94b;">background-image:</span> <span style="color: #e53e3e;">url('sua-imagem.jpg')</span>; <span style="color: #718096;">
+    /* Caminho do arquivo */</span>
+  <span style="color: #ecc94b;">background-size:</span> <span style="color: #e53e3e;">cover</span>;              <span style="color: #718096;">
+    /* Cobre a tela inteira */</span>
+  <span style="color: #ecc94b;">background-repeat:</span> <span style="color: #e53e3e;">no-repeat</span>;        <span style="color: #718096;">
+    /* Não deixa repetir */</span>
+<span style="color: #ed64a6;">}</span></pre>
+            </div>
+            
+            <p style="font-size: 14px; color: #e65c00; font-weight: bold; line-height: 1.5; text-align: center;">
+                O exemplo prático desta propriedade está aplicado aqui mesmo, no fundo desta página!
+            </p>
+        </div>
+
+    
+        <div class="kb-contact-card" style="max-width: 600px;">
+            <div class="kb-header-card">
+                <h2>Guia Visual: Figura no Canto Superior</h2>
+                <p>No HTML, inserimos a imagem com a tag <code>&lt;img&gt;</code>. Depois, no CSS, usamos <code>position: absolute;</code> para descolá-la do fluxo e fixá-la no topo esquerdo do navegador.</p>
+            </div>
+
+            
+            <div style="background: #2d3748; padding: 15px; border-radius: 6px; margin-bottom: 15px;">
+                <pre style="margin: 0; color: #a0aec0; font-family: 'Courier New', monospace; font-size: 13px; text-align: left; line-height: 1.4;">
+<span style="color: #718096;">&lt;!-- Estrutura no HTML --&gt;</span>
+<span style="color: #ed64a6;">&lt;img</span> <span style="color: #ecc94b;">src=</span><span style="color: #e53e3e;">"css.png"</span> <span style="color: #ecc94b;">class=</span><span style="color: #e53e3e;">"figura-superior"</span><span style="color: #ed64a6;">&gt;</span>
+
+<span style="color: #718096;">
+    /* Estilização no CSS */</span>
+<span style="color: #ed64a6;">.figura-superior {</span>
+  <span style="color: #ecc94b;">position:</span> <span style="color: #e53e3e;">absolute</span>;
+  <span style="color: #ecc94b;">top:</span> <span style="color: #e53e3e;">15px</span>;  <span style="color: #718096;">
+    /* Distância do topo */</span>
+  <span style="color: #ecc94b;">left:</span> <span style="color: #e53e3e;">15px</span>; <span style="color: #718096;">
+    /* Distância da esquerda */</span>
+<span style="color: #ed64a6;">}</span></pre>
+            </div>
+            
+            <p style="font-size: 14px; color: #e65c00; font-weight: bold; line-height: 1.5; text-align: center;">
+                Como por exemplo: Veja a imagem "css.png" declarada e posicionada no topo esquerdo!
+            </p>
+        </div>
+
+        
+        <div class="kb-contact-card" style="max-width: 600px;">
+            <div class="kb-header-card">
+                <h2>Guia Visual: Figura Alinhada à Direita</h2>
+                <p>Inserimos a tag no HTML e aplicamos <code>position: fixed;</code> no CSS. Isso trava o elemento na lateral direita do navegador, fazendo com que ele acompanhe a tela mesmo durante a rolagem.</p>
+            </div>
+
+           
+            <div style="background: #2d3748; padding: 15px; border-radius: 6px; margin-bottom: 15px;">
+                <pre style="margin: 0; color: #a0aec0; font-family: 'Courier New', monospace; font-size: 13px; text-align: left; line-height: 1.4;">
+<span style="color: #718096;">&lt;!-- Estrutura no HTML --&gt;</span>
+<span style="color: #ed64a6;">&lt;img</span> <span style="color: #ecc94b;">src=</span><span style="color: #e53e3e;">"html&css.webp"</span> <span style="color: #ecc94b;">class=</span><span style="color: #e53e3e;">"figura-direita"</span><span style="color: #ed64a6;">&gt;</span>
+
+<span style="color: #718096;">/* Estilização no CSS */</span>
+<span style="color: #ed64a6;">.figura-direita {</span>
+  <span style="color: #ecc94b;">position:</span> <span style="color: #e53e3e;">fixed</span>;
+  <span style="color: #ecc94b;">right:</span> <span style="color: #e53e3e;">15px</span>; <span style="color: #718096;">
+    /* Grudada na lateral direita */</span>
+  <span style="color: #ecc94b;">top:</span> <span style="color: #e53e3e;">50%</span>;   <span style="color: #718096;">
+    /* Centralizada na altura da tela */</span>
+<span style="color: #ed64a6;">}</span></pre>
+            </div>
+            
+            <p style="font-size: 14px; color: #e65c00; font-weight: bold; line-height: 1.5; text-align: center;">
+                Como por exemplo: Veja a imagem "html&css.webp" fixada e acompanhando a lateral direita!
+            </p>
+        </div>
+
+        
+        <div class="kb-contact-card" style="max-width: 600px;">
+            <div class="kb-header-card">
+                <h2>Guia Visual: Estrutura de Formulários</h2>
+                <p>Formulários em HTML usam a tag <code>&lt;form&gt;</code> para agrupar campos de entrada de dados como textos, e-mails e senhas.</p>
+            </div>
+
+           
+            <div style="background: #2d3748; padding: 15px; border-radius: 6px; margin-bottom: 15px;">
+                <pre style="margin: 0; color: #a0aec0; font-family: 'Courier New', monospace; font-size: 13px; text-align: left; line-height: 1.4;">
+<span style="color: #ed64a6;">&lt;form&gt;</span>
+  <span style="color: #718096;">&lt;!-- Campos de dados exigidos --&gt;</span>
+  <span style="color: #ed64a6;">&lt;input</span> <span style="color: #ecc94b;">type=</span><span style="color: #e53e3e;">"text"</span><span style="color: #ed64a6;">&gt;</span>  <span style="color: #718096;">&lt;!-- Endereço --&gt;</span>
+  <span style="color: #ed64a6;">&lt;input</span> <span style="color: #ecc94b;">type=</span><span style="color: #e53e3e;">"email"</span><span style="color: #ed64a6;">&gt;</span> <span style="color: #718096;">&lt;!-- E-mail --&gt;</span>
+  <span style="color: #ed64a6;">&lt;input</span> <span style="color: #ecc94b;">type=</span><span style="color: #e53e3e;">"password"</span><span style="color: #ed64a6;">&gt;</span> <span style="color: #718096;">&lt;!-- Senha --&gt;</span>
+<span style="color: #ed64a6;">&lt;/form&gt;</span></pre>
+            </div>
+            
+            <p style="font-size: 14px; color: #555; line-height: 1.5;">
+                No CSS, usamos regras como <code>.input-group { display: flex; }</code> para alinhar as etiquetas (labels) e as caixas de digitação verticalmente, garantindo um visual limpo.
+            </p>
+        </div>
+
+        
+        <p style="font-size: 18px; font-weight: bold; color: #ffffff; text-align: center; margin: 10px 0; text-shadow: 1px 1px 4px rgba(0,0,0,0.8);">
+            Como por exemplo:
+        </p>
+
+        
+        <div class="kb-contact-card">
+            <div class="kb-header-card">
+                <h2>FORMULÁRIO DE ATENDIMENTO</h2>
+                <p>Preencha os campos obrigatórios abaixo para realizar o envio das suas informações.</p>
+            </div>
+            
+       
+            <form class="kb-form" onsubmit="alert('OK, foi enviado!'); return false;">
+                
+                
+                <div class="input-group">
+                    <label>ENDEREÇO *</label>
+                    <input type="text" placeholder="Digite seu endereço completo..." required>
+                </div>
+
+                
+                <div class="input-group">
+                    <label>E-MAIL *</label>
+                    <input type="email" placeholder="seu-email@exemplo.com" required>
+                </div>
+
+                 <div class="input-group">
+                    <label>SENHA *</label>
+                    <input type="password" placeholder="Digite sua senha de segurança..." required>
+                </div>
+
+                
+                <button type="submit" class="kb-btn-primary">ENVIAR</button>
+            </form>
+
+            <div class="kb-footer-card">
+                
+                <a href="index.html">← VOLTAR PARA O GUIA (PÁG 1)</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+
+
+

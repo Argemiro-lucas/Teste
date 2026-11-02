@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Tutorial - Guia de Estilização</title>
+    <!-- Link configurado para a mesma pasta raiz conforme alinhado -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="pagina1-fundo"> 
+
+    <header class="main-header">
+        <div class="logo">Html<span>Tutorial</span></div>
+        <nav class="user-menu">
+          
+        </nav>
+    </header>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#introducao">O QUE É?</a></li>
+            <li><a href="#guia-html">COMANDOS HTML</a></li>
+            <li><a href="#guia-fontes">COMANDOS CSS</a></li>
+            <li><a href="#figura-centro">IMAGEM CENTRALIZADA</a></li>
+        </ul>
+    </nav>
+
+   
+    <main class="conteudo-principal">
+
+       
+        <section id="introducao" class="about-section" style="border-bottom: 1px solid #ddd;">
+            <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center; padding: 20px 0;">
+                <h2>Introdução ao Desenvolvimento Web</h2>
+                <p style="font-size: 16px; line-height: 1.6; color: #333; margin-top: 15px;">
+                    O <strong>HTML (HyperText Markup Language)</strong> é a linguagem de marcação utilizada para construir a estrutura e o esqueleto de uma página web, definindo onde ficam os textos, títulos, imagens e links. 
+                </p>
+                <p style="font-size: 16px; line-height: 1.6; color: #333; margin-top: 10px;">
+                    O <strong>CSS (Cascading Style Sheets)</strong> é a folha de estilo usada para dar vida, cores, posicionamento e design a essa estrutura criada pelo HTML. Juntos, eles formam a base visual de qualquer site na internet.
+                </p>
+            </div>
+        </section>
+
+      
+        <section id="guia-html" class="about-section" style="background: #fafafa; border-bottom: 1px solid #eee;">
+            <div class="container">
+                <h2>Guia Visual: Comandos Básicos de HTML</h2>
+                <p>Veja como estruturar os elements essenciais de uma página utilizando as tags fundamentais do HTML:</p>
+                
+                <div class="about-content" style="margin-top: 30px;">
+                    
+                  
+                    <div class="card-didatico" style="flex: 1 1 100%; max-width: 100%;">
+                        <h3>1. Estrutura Base do HTML</h3>
+                        <p>Todo arquivo HTML precisa de uma fundação padrão. Ela avisa o navegador que o documento é uma página web e configura os dados principais.</p>
+                        <div class="ilustracao-caixa" style="justify-content: flex-start; background: #2d3748; padding: 15px; border-radius: 6px;">
+                            <pre style="margin: 0; color: #a0aec0; font-family: 'Courier New', monospace; font-size: 13px; text-align: left; line-height: 1.4;">
+<span style="color: #ecc94b;">&lt;!DOCTYPE html&gt;</span> <span style="color: #718096;">&lt;!-- 
+    Define o documento como HTML5 --&gt;</span>
+<span style="color: #ed64a6;">&lt;html&gt;</span>  
+        <span style="color: #718096;">&lt;!-- Tag principal que envolve todo o site --&gt;</span>
+  <span style="color: #ed64a6;">&lt;head&gt;</span>       
+   <span style="color: #718096;">&lt;!-- Configurações internas (título, links CSS) --&gt;</span>
+    <span style="color: #ed64a6;">&lt;title&gt;
+        
+    </span>Título da Aba<span style="color: #ed64a6;">&lt;/title&gt;</span>
+  <span style="color: #ed64a6;">&lt;/head&gt;</span>
+  <span style="color: #ed64a6;">&lt;body&gt;</span>        <span style="color: #718096;">&lt;!-- Onde fica todo o conteúdo visível do site --&gt;</span>
+    Conteúdo visível aqui...
+  <span style="color: #ed64a6;">&lt;/body&gt;</span>
+<span style="color: #ed64a6;">&lt;/html&gt;</span></pre>
+                        </div>
+                    </div>
+                    
+                   
+                    <div class="card-didatico">
+                        <h3>2. Tags de Título (&lt;h1&gt; a &lt;h6&gt;)</h3>
+                        <p>Definem a importância e a hierarquia dos textos. O <code>&lt;h1&gt;</code> é o título principal (maior), diminuindo até o <code>&lt;h6&gt;</code>.</p>
+                        <div class="ilustracao-caixa" style="flex-direction: column; align-items: flex-start; gap: 5px;">
+                            <h4 style="margin:0; font-size: 18px; color: #1a1a1a;">Título H4 (Importante)</h4>
+                            <h6 style="margin:0; font-size: 12px; color: #777;">Título H6 (Menor hierarquia)</h6>
+                        </div>
+                        <p class="codigo-explica"><strong>Código:</strong> <code>&lt;h4&gt;Texto&lt;/h4&gt;</code></p>
+                    </div>
+
+                  
+                    <div class="card-didatico">
+                        <h3>3. Tag de Link (&lt;a&gt;)</h3>
+                        <p>A tag <code>&lt;a&gt;</code> cria hiperligações para conectar páginas. O atributo <code>href</code> indica o endereço de destino do clique.</p>
+                        <div class="ilustracao-caixa">
+                            <a href="#" onclick="return false;" style="color: #ff6500; font-weight: bold; text-decoration: underline;">Clique aqui para acessar</a>
+                        </div>
+                        <p class="codigo-explica"><strong>Código:</strong> <code>&lt;a href="url"&gt;...&lt;/a&gt;</code></p>
+                    </div>
+
+          
+                    <div class="card-didatico">
+                        <h3>4. Listas (&lt;ul&gt; e &lt;li&gt;)</h3>
+                        <p>A tag <code>&lt;ul&gt;</code> cria uma lista com marcadores de pontos. Cada item da lista deve ser envolvido pela tag interna <code>&lt;li&gt;</code>.</p>
+                        <div class="ilustracao-caixa" style="justify-content: flex-start; padding-left: 30px;">
+                            <ul style="margin: 0; padding: 0; color: #1a1a1a; text-align: left;">
+                                <li>Item Exemplo A</li>
+                                <li>Item Exemplo B</li>
+                            </ul>
+                        </div>
+                        <p class="codigo-explica"><strong>Código:</strong> <code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="guia-fontes" class="about-section">
+            <div class="container">
+                <h2>Guia Visual: Comandos de Fonte em CSS</h2>
+                <p>Veja abaixo como modificar as propriedades textuais utilizando folhas de estilo básicas:</p>
+                
+                <div class="about-content" style="margin-top: 30px;">
+                    
+                    
+                    <div class="card-didatico">
+                        <h3>5. Mudar a Cor da Fonte</h3>
+                        <p class="texto-cor-exemplo">Este texto está estilizado com uma cor personalizada.</p>
+                       
+                        <p class="codigo-explica"><strong>Código usado:</strong> <code>body { color: #ff6500; }</code></p>
+                    </div>
+
+                    <
+                    <div class="card-didatico">
+                        <h3>6. Alterar o Tamanho da Fonte</h3>
+                        <p class="texto-tamanho-exemplo">Este texto está com tamanho ampliado.</p>
+                      
+                        <p class="codigo-explica"><strong>Código usado:</strong> <code>body { font-size: 26px; }</code></p>
+                    </div>
+
+                    
+                    <div class="card-didatico">
+                        <h3>7. Modificar o Tipo da Fonte</h3>
+                        <p class="texto-tipo-exemplo">Este texto utiliza uma família de fontes sem serifa moderna.</p>
+                        
+                        <p class="codigo-explica"><strong>Código usado:</strong> <code>body { font-family: 'Segoe UI', sans-serif; }</code></p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="figura-centro" class="secao-imagem-centro">
+            <div class="container">
+                <h2>Ilustração: Imagem Centralizada</h2>
+                <p>Para centralizar uma imagem na tela usando CSS básico, você deve transformar a tag de imagem em um bloco (<code>display: block;</code>) e definir as margens laterais como automáticas (<code>margin: 0 auto;</code>).</p>
+                
+                               <div class="card-didatico" style="margin: 20px auto; max-width: 600px; text-align: left;">
+                    <h3>Código para Centralizar:</h3>
+                    <p class="codigo-explica" style="text-align: left;">
+                        <strong>HTML:</strong> <code>&lt;img src="html5.png" class="img-centralizada"&gt;</code>
+                        <br>
+                        <strong>CSS:</strong> <code>.img-centralizada { display: block; margin: 0 auto; }</code>
+                    </p>
+                </div>
+
+                
+                <p style="font-size: 16px; font-weight: bold; margin-top: 25px; margin-bottom: 15px; color: #333; text-align: center;">
+                    Como por exemplo:
+                </p>
+                
+                
+                <div class="bloco-centralizador">
+                    <img src="html5.png" alt="Figura Centralizada" class="img-centralizada">
+                </div>
+            </div>
+        </section>
+
+       
+        <section style="text-align: center; padding: 40px 0; background: #fafafa; border-top: 1px solid #eee;">
+            <div class="container">
+                <p style="font-size: 16px; margin-bottom: 15px; color: #555;">Gostou do nosso guia visual? Veja na próxima página a aplicação prática de dados estruturados.</p>
+                <a href="2pag.html" class="link-destaque" style="font-size: 18px; padding: 15px 30px; display: inline-block;">veja um exemp-lo de um formulario</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+
+
